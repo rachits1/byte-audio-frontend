@@ -1,0 +1,19 @@
+.topbox-container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.topbox-container div{
+    border-top: 10px solid lightgray;
+    width: 100%;
+}
+
+.topbox-container div.active {
+    border-top-color: var(--content-red);
+}
+
+@media screen and (max-width:310px){
+    .topbox-container div {
+        display: none;
+    }
+}

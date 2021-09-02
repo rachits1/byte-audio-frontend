@@ -1,0 +1,9 @@
+.products-container {
+    gap: 1rem;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.fa-spinner {
+    color: var(--content-red)
+}

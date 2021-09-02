@@ -1,0 +1,92 @@
+.nav-container {
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    font-family: var(--font-secondary);
+}
+
+.logo-red {
+    color: var(--content-red);
+}
+
+.search-box {
+    position: relative;
+    padding: 5px 8px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.fa-search {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: black;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.fa-shopping-cart {
+    position: relative;
+}
+
+.cart-count {
+    background-color: var(--content-red);
+    border-radius: 50%;
+    padding: 1px 4px;
+    font-size: 12px;
+    position: absolute;
+    top: -6px;
+    right: -7px;
+}
+
+.nav-btn {
+    margin: 0 0.5rem;
+}
+
+.login-btn {
+    background-color: var(--content-red);
+    color: #fff;
+    font-weight: bolder;
+    padding: 7px 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.lo-ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 5px;
+    background-color: #fff;
+    /* background-color: aqua; */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.lo-btn {
+    color: var(--content-red);
+}
+
+.dropdown:hover .lo-ul {
+    display: block;
+    z-index: 2;
+}
+
+@media screen and (max-width: 450px){
+    .search-box {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .fa-search {
+        top: 7px;
+    }
+}
